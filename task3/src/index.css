@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#header {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+}
+body{
+  background: rgb(81,255,241);
+background: linear-gradient(90deg, rgba(81,255,241,0.969625350140056) 0%, rgba(53,80,198,1) 13%, rgba(7,162,221,1) 51%, rgba(0,255,244,1) 100%);
+
+}
+
+#title {
+  background-color: rgba(173, 245, 221, 0.3);
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.animation {
+  position: relative;
+  animation: titleani 8s infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+@keyframes titleani {
+  0%{
+    left: -70vw;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 70vw;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.addform {
+  display: flex;
+  flex-direction: column;
+  min-width: 35vw;
+  margin: 36px 63px;
+  padding: 20px 20px;
+  border: 2px solid rgb(85, 211, 211);
+  border-radius: 11px;
+  box-shadow: 1px 1px aqua;
+  background-color: rgba(0, 255, 251, 0.4);
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+
+.add-form {
+  padding: 3px 15px;
+  display: table-cell;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.form input {
+  display: inline-block;
+  margin: 3px 10px;
+  padding: 3px 6px;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  border: 2px solid rgb(230, 218, 218);
+}
+
+.add-form input {
+  margin: 5px 8px;
+  padding: 3px 4px;
+}
+
+.btn {
+  background: #000;
+  color: #fff;
+  border: none !important;
+  padding: 7px 7px !important;
+  margin: 5px !important;
+  border-radius: 5px !important;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px !important;
+  max-width: 100px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.enrolled {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.enrolledDesign {
+  background-color: rgba(86, 243, 219, 0.6);
+  border: 2px solid rgb(152, 152, 250);
+  border-radius: 9px;
+  margin: 8px 13px;
+  padding: 4px 5px;
+  min-width: 30vw;
+}
+
+.enrolledDesign div {
+  margin: 5px 5px;
+  font-size: 1rem;
+}
+
+.studentimg img {
+  display: inline;
+  max-width: 86px;
+  /* background-color: crimson; */
+  border: 2px solid rgb(152, 152, 250);
+  padding: 1px 2px;
+  position: absolute;
+  right: 30vw;
+
+}
+
+.row-wise {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-wise {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1100px) {
+  .container{
+    flex-direction: column;
+  }
+  .addform{
+    margin: 5px 8px;
+    padding: 3px 3px;
+  }
+  input.btn{
+    display: block;
+    margin: auto !important;
+  }
+}
